@@ -1,0 +1,229 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    
+    
+  }
+  body{
+    background-color: #eefbff;
+  }
+  
+  
+  .main{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 10%;
+    background-color:#fff;
+  }
+  .brand{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .logo{
+    font-family: 'Noto Serif Vithkuqi', serif;
+    font-weight: bold;
+  }
+  ul, li, a{
+    text-decoration:none;
+    list-style:none;
+    transition: all 0.3s ease 0s;
+    
+  }
+  
+  ul li a:hover{
+    color:#0088a9;
+    
+  }
+  
+  .logo{
+    cursor:pointer;
+    color:black;
+    font-size:25px;
+  }
+  .main li{
+    display:inline-block;
+    padding:0px 20px;
+  }
+  li,a,button{
+    font-family:"Montserrat", sans-serif;
+    font-weight:500;
+    font-size:16px;
+    color:black;
+  }
+  
+  button{
+    padding:9px 25px;
+    background-color:rgba(0,136,169,1);
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+  }
+  button:hover{
+    background-color:rgba(0,136,169,0.5);
+  }
+  .toggle-btn{
+    display:none;
+    color:#fff;
+    font-size:1.5rem;
+    cursor:pointer;
+  }
+  /* Dropdown*/
+  .dropdown-btn{
+    display:none;
+    position:absolute;
+    right:2rem;
+    top:108px;
+    height:0px;
+    width:350px;            background:#eefbff;
+    backdrop-filter:blur(15px);
+    border-radius:10px;
+    overflow:hidden; 
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .dropdown-btn.open{
+    height:240px;
+  }
+  .dropdown-btn li{
+    color:black;
+    padding:0.7rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .dropdown-btn a{
+    color:black;
+    font-weight:700;
+  }
+  i{
+    color: black;
+  }
+  /* Home screen */
+  .container{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 70px;
+   font-family: 'Inter ',sans-serif;
+    
+  }
+  .heading{
+    font-size: 3.5rem;
+    word-spacing: 1rem;
+    color:;
+    font-weight: 500;
+  }
+  h4{
+    margin-top: 15px;
+    font-size: 1.3rem;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 200;
+  }
+  .field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px 0px;
+  }
+ 
+  
+  
+  input{
+    width:50%;
+    padding: 17px 0px;
+    border-radius: 20px;
+    outline: none;
+    border-style: none;
+    text-align: center;
+    background:  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+    background-color: white;
+  }
+
+  .field-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    margin: auto;
+  }
+  p{
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: 'Inter ',sans-serif;
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+  }
+
+  .btn-2{
+    position:relative;
+    left:200px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  .btn-3{
+    position: relative;
+    right:200px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+
+
+
+  
+  /* Responsive */
+  @media(max-width: 992px){
+    .main li,
+    .main .btn {
+      display:none;
+    }
+    .main .toggle-btn{
+      display:block;
+      
+    }
+    
+    .dropdown-btn{
+      display:block;
+    }
+    .container{
+        margin-top: 50px;
+    }
+
+    .heading{
+        margin-left: 120px;
+    }
+    
+  }
+  
+  @media(max-width: 576px){
+    dropdown-btn{
+        top: 0rem;
+        left:2rem;
+      width:unset;
+    }
+    .heading{
+        width: 100%;
+        margin-right: 110px;
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    h4{
+        margin-left: 20px;
+    }
+    input{
+        width: 90%;
+    }
+    .field-2{
+        width: 90%;
+        margin: 0px 20px;
+    }
+    .btn-3{
+        right: 180px;
+    }
+
+  }
